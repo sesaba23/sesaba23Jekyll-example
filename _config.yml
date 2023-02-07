@@ -1,19 +1,8 @@
+remote_theme: benbalter/retlab
+
 collections:
   authors:
     output: true
-
-lsi: false
-safe: true
-source: [your repo's top level directory]
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-
-remote_theme: benbalter/retlab
 
 title: Ben Balter
 description: Attorney, open source developer, product manager
@@ -72,3 +61,14 @@ plugins:
   - jekyll-avatar
   - jekyll-github-metadata
   - jekyll-feed
+
+lsi: false
+safe: true
+source: /
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge  
