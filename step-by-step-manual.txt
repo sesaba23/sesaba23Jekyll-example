@@ -1,0 +1,20 @@
+1.- Create a basic static page in github pages:
+    https://pages.github.com/
+
+2.- Install Jekyll on Linux:
+    https://jekyllrb.com/docs/installation/other-linux/
+
+    Set Jekyll PATH:
+    $kate /home/sergio/.bashrc
+    add following lines:
+        export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+        export PATH="$PATH:$GEM_HOME/bin"
+    restart user session
+
+3.- Step by Step Tutorial with jekyll
+    https://jekyllrb.com/docs/step-by-step/01-setup/
+
+4.- Setting up a GitHub Pages site with Jekyll
+    https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll
+
+
