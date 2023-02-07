@@ -2,27 +2,6 @@ collections:
   authors:
     output: true
 
-defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
 lsi: false
 safe: true
 source: [your repo's top level directory]
@@ -35,3 +14,61 @@ kramdown:
   syntax_highlighter: rouge
 
 remote_theme: benbalter/retlab
+
+title: Ben Balter
+description: Attorney, open source developer, product manager
+
+lang: en-US
+
+# Pages to include in header navigation
+nav_pages:
+  - index.html
+  - talks.md
+  - press.md
+  - about.md
+  - contact.md
+
+# Pages to include in footer navigation
+footer_pages:
+  - books.md
+  - fine-print.md
+
+# Disqus login information, for comments
+disqus:
+  shortname: DISQUS_USERNAME
+
+# Links to include on the contact page
+contact_links:
+  - name: Twitter
+    url: https://twitter.com/BenBalter
+    icon: twitter
+  - name: Facebook
+    url: https://facebook.com/BenBalter
+    icon: facebook
+
+# Front matter defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
+      comments: false
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-github-metadata
+  - jekyll-feed
